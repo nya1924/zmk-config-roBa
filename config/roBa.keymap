@@ -14,9 +14,7 @@
     quick-tap-ms = <0>;
 };
 
-&sl { 
-    release-after-ms = <250>;
-};
+&sl { release-after-ms = <250>; };
 
 / {
     combos {
@@ -142,10 +140,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &mkp MB1  &mkp MB2  &mkp MB3  &lt 5 MINUS
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &mkp MB4  &mkp MB5                                &trans
+&trans  &trans  &trans  &trans  &trans                                 &trans             &trans             &trans             &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans             &mkp_exit_AML MB1  &mkp_exit_AML MB2  &mkp_exit_AML MB3  &lt 5 MINUS
+&trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans             &trans             &trans             &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &mkp_exit_AML MB4  &mkp_exit_AML MB5                                                           &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
