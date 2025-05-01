@@ -14,11 +14,11 @@
     quick-tap-ms = <0>;
 };
 
-&sl { release-after-ms = <250>; };
+&sl { 
+    release-after-ms = <250>;
+};
 
-//&mkp_imput_listener {
-//    input-processors = <&zip_temp_layer MOUSE 250>;
-//};
+
 
 / {
     combos {
@@ -51,6 +51,13 @@
     };
 
     macros {
+        tog_off: toggle_layer_off {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer Off";
+            toggle-mode = "off";
+        };
+
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
