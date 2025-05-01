@@ -13,6 +13,10 @@
     quick-tap-ms = <0>;
 };
 
+&sl {
+    release-after-ms = <250>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -50,17 +54,29 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+        mkp_exit_AML: mkp_exit_AML {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = 
+                <&macro_press>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
+                <&macro_release>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
+                <&macro_tap>,
+                <&sl MOUSE>;
+            label = "MKP_EXIT_AML";
+        };
     };
 
-    behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
+//    behaviors {
+//        lt_to_layer_0: lt_to_layer_0 {
+//            compatible = "zmk,behavior-hold-tap";
+//            label = "LAYER_TAP_TO_0";
+//            bindings = <&mo>, <&to_layer_0>;
+//
+//            #binding-cells = <2>;
+//            tapping-term-ms = <200>;
+//        };
 
         // 新しいスクロール動作の追加
 
