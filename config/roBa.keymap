@@ -64,9 +64,9 @@
             #binding-cells = <1>;
             bindings = 
                 <&macro_press>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_release>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&sl MOUSE>;
             label = "MKP_EXIT_AML";
