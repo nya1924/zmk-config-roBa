@@ -14,7 +14,9 @@
     quick-tap-ms = <0>;
 };
 
-&sl { release-after-ms = <250>; };
+&sl { 
+release-after-ms = <150>; 
+};
 
 / {
     combos {
