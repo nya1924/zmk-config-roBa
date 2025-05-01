@@ -6,7 +6,6 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
-
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
 &mt {
@@ -64,11 +63,14 @@
         };
 
         // 新しいスクロール動作の追加
+
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -78,13 +80,14 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                 &kp T                                          &kp Y        &kp U  &kp I        &kp O       &kp P
-&kp A      &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(S))      &kp COLON      &kp H        &kp J  &kp K        &kp L       &kp MINUS
-&kp Z      &kp X         &kp C         &kp V                 &kp B        &kp TAB            &kp SEMICOLON  &kp N        &kp M  &lt 5 COMMA  &kp PERIOD  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LA(GRAVE)  &lt 2 SPACE  &kp DEL            &kp BACKSPACE  &lt 3 ENTER                                  &lt 6 ESCAPE
+&kp Q      &kp W         &kp E         &kp R           &kp T                                          &kp Y        &kp U    &kp I      &kp O       &kp P
+&kp A      &kp S         &kp D         &kp F           &kp G        &kp LS(LG(S))      &kp COLON      &kp H        &kp J    &kp K      &kp L       &kp MINUS
+&kp Z      &kp X         &kp C         &kp V           &kp B        &kp LA(GRAVE)      &kp SEMICOLON  &kp N        &lt 5 M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT TAB  &lt 2 SPACE  &kp DEL            &kp BACKSPACE  &lt 3 ENTER                                  &lt 6 EQUAL
             >;
 
             //jsensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+
             sensor-bindings = <&scroll_up_down>;
         };
 
@@ -119,10 +122,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &mkp MB5  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                        &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &mkp MB1  &mkp MB2  &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &lt 5 M   &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &mkp MB4  &mkp MB5                                &trans
             >;
         };
 
