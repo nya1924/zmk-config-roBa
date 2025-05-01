@@ -102,9 +102,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT TAB  &lt 2 SPACE  &kp DEL            &kp BACKSPACE  &lt 3 ENTER                                &lt 6 EQUAL
             >;
 
-            //jsensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
-
-            jsensor-bindings = <&scroll_up_down>;
+           sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
@@ -124,7 +122,7 @@
 &trans             &trans        &trans        &trans        &trans        &trans                       &kp BACKSPACE   &kp ENTER                                                                  &kp PIPE
             >;
 
-            jsensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW {
@@ -135,7 +133,7 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LA(TAB)  &kp SPACE  &kp DELETE      &trans  &trans                                                          &trans
             >;
 
-            jsensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
@@ -146,7 +144,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &mkp_exit_AML MB4  &mkp_exit_AML MB5                                                           &trans
             >;
 
-            jsensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
@@ -157,7 +155,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            jsensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_6 {
