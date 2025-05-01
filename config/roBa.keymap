@@ -107,17 +107,19 @@
 &mt LEFT_SHIFT N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans             &trans        &trans        &trans        &trans        &trans                       &kp BACKSPACE   &kp ENTER                                                                  &kp PIPE
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE        &trans        &trans        &trans                &trans                             &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &trans
-&trans            &trans        &trans        &trans                &trans     &trans          &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans            &trans        &trans        &trans                &trans     &trans          &trans  &trans         &trans          &trans          &trans           &trans
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LA(GRAVE)  &kp SPACE  &kp DELETE      &trans  &trans                                                          &trans
+&kp ESCAPE        &trans        &trans        &trans              &trans                             &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &trans
+&trans            &trans        &trans        &trans              &trans     &trans          &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans            &trans        &trans        &trans              &trans     &trans          &trans  &trans         &trans          &trans          &trans           &trans
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LA(TAB)  &kp SPACE  &kp DELETE      &trans  &trans                                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
@@ -127,6 +129,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &lt 5 M   &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &mkp MB4  &mkp MB5                                &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
@@ -136,6 +140,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_6 {
