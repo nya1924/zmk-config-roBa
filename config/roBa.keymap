@@ -1,8 +1,8 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -14,9 +14,7 @@
     quick-tap-ms = <0>;
 };
 
-&sl {
-    release-after-ms = <250>;
-};
+&sl { release-after-ms = <250>; };
 
 //&mkp_imput_listener {
 //    input-processors = <&zip_temp_layer MOUSE 250>;
@@ -59,16 +57,18 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
         mkp_exit_AML: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = 
+            bindings =
                 <&macro_press>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&sl MOUSE>;
+
             label = "MKP_EXIT_AML";
         };
     };
@@ -101,10 +101,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R           &kp T                                          &kp Y        &kp U    &kp I      &kp O       &kp P
-&kp A      &kp S         &kp D         &kp F           &kp G        &kp LS(LG(S))      &kp COLON      &kp H        &kp J    &kp K      &kp L       &kp MINUS
-&kp Z      &kp X         &kp C         &kp V           &kp B        &kp LA(GRAVE)      &kp SEMICOLON  &kp N        &lt 5 M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT TAB  &lt 2 SPACE  &kp DEL            &kp BACKSPACE  &lt 3 ENTER                                  &lt 6 EQUAL
+&kp Q      &kp W         &kp E         &kp R           &kp T                                          &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A      &kp S         &kp D         &kp F           &kp G        &kp LS(LG(S))      &kp COLON      &kp H        &kp J  &kp K      &kp L       &lt 5 MINUS
+&kp Z      &kp X         &kp C         &kp V           &kp B        &kp LA(GRAVE)      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT TAB  &lt 2 SPACE  &kp DEL            &kp BACKSPACE  &lt 3 ENTER                                &lt 6 EQUAL
             >;
 
             //jsensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -146,8 +146,8 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                        &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &lt 5 M   &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &mkp MB1  &mkp MB2  &mkp MB3  &lt 5 MINUS
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &mkp MB4  &mkp MB5                                &trans
             >;
 
