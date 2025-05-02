@@ -28,6 +28,11 @@
             bindings = <&mo 4>;
             key-positions = <18 19>;
         };
+
+        win_tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <24 25>;
+        };
     };
 
     macros {
