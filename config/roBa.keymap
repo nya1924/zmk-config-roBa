@@ -20,7 +20,7 @@
         compatible = "zmk,combos";
 
         alt_tab {
-            bindings = <&kp LA(TAB)>;
+            bindings = <&kp LEFT_ALT>;
             key-positions = <12 13>;
         };
 
