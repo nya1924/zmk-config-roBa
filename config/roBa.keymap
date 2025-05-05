@@ -33,6 +33,26 @@
             bindings = <&kp LG(TAB)>;
             key-positions = <24 25>;
         };
+
+        win_shift_right {
+            bindings = <&kp LG(LS(RIGHT))>;
+            key-positions = <13 20>;
+        };
+
+        win_shift_left {
+            bindings = <&kp LS(LG(LEFT))>;
+            key-positions = <13 18>;
+        };
+
+        win_shift_up {
+            bindings = <&kp LS(LG(UP_ARROW))>;
+            key-positions = <13 7>;
+        };
+
+        win_shift_down {
+            bindings = <&kp LS(LG(DOWN_ARROW))>;
+            key-positions = <13 19>;
+        };
     };
 
     macros {
