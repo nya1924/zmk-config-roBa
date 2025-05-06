@@ -53,6 +53,11 @@
             bindings = <&kp LS(LG(DOWN_ARROW))>;
             key-positions = <13 19>;
         };
+
+        change {
+            bindings = <&kp LA(GRAVE)>;
+            key-positions = <38 41>;
+        };
     };
 
     macros {
