@@ -58,6 +58,11 @@
             bindings = <&kp LA(GRAVE)>;
             key-positions = <38 41>;
         };
+
+        win_space {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <39 40>;
+        };
     };
 
     macros {
