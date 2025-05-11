@@ -146,7 +146,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4           &mkp MB5  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &to 6       &trans  &trans  &mkp MB4           &mkp MB5  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                         &trans
             >;
 
