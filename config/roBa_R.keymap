@@ -5,7 +5,7 @@
     automouse-layer = <MOUSE>;
     scroll-layers = <SCROLL>;
     arrows {
-        layers = <ARROW>;
+        layers = <6>;
         bindings =
             <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
