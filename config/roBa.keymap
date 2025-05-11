@@ -11,7 +11,7 @@
 
 &mt { quick-tap-ms = <200>; };
 
-&sl { release-after-ms = <250>; };
+&sl { release-after-ms = <400>; };
 
 &lt { quick-tap-ms = <200>; };
 
