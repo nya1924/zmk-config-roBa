@@ -9,11 +9,11 @@
 #define NUM 2
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
-&mt { quick-tap-ms = <200>; };
+&mt { quick-tap-ms = <0>; };
 
 &sl { release-after-ms = <250>; };
 
-&lt { quick-tap-ms = <200>; };
+&lt { quick-tap-ms = <0>; };
 
 / {
     combos {
