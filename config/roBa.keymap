@@ -117,7 +117,7 @@
         m: m {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp J &kp G &kp NUMBER_2 &kp N8 &kp NUMBER_1 &kp NUMBER_4 &kp N5 &kp AT_SIGN &kp T &kp E &kp I &kp J &kp I &kp N &kp PERIOD &kp C &kp O &kp PERIOD &kp J &kp P>;
+            bindings = <&kp T &kp J &kp G &kp NUMBER_2 &kp N8 &kp NUMBER_1 &kp NUMBER_4 &kp N5 &kp JP_AT &kp T &kp E &kp I &kp J &kp I &kp N &kp PERIOD &kp C &kp O &kp PERIOD &kp J &kp P>;
             label = "M";
         };
 
@@ -138,7 +138,7 @@
         l: l {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp J &kp G &kp NUMBER_2 &kp N8 &kp NUMBER_1 &kp NUMBER_4 &kp N5 &kp AT_SIGN &kp T &kp E &kp I &kp J &kp I &kp N &kp PERIOD &kp C &kp O &kp PERIOD &kp J &kp P &kp TAB &kp N &kp Y &kp NUMBER_1 &kp N9 &kp NUMBER_2 &kp NUMBER_4 &kp N0 &kp NUMBER_3 &kp TAB>;
+            bindings = <&kp T &kp J &kp G &kp NUMBER_2 &kp N8 &kp NUMBER_1 &kp NUMBER_4 &kp N5 &kp JP_AT &kp T &kp E &kp I &kp J &kp I &kp N &kp PERIOD &kp C &kp O &kp PERIOD &kp J &kp P &kp TAB &kp N &kp Y &kp NUMBER_1 &kp N9 &kp NUMBER_2 &kp NUMBER_4 &kp N0 &kp NUMBER_3 &kp TAB>;
             label = "L";
         };
     };
