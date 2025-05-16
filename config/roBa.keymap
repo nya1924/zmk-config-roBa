@@ -170,9 +170,9 @@
         SYMBOL {
             bindings = <
 &kp MINUS          &kp N7        &kp N8        &kp N9             &kp JP_PLUS                                                  &kp EXCLAMATION  &kp JP_LBRACKET       &kp JP_RBRACKET        &kp DOLLAR   &kp JP_AMPERSAND
-&kp SLASH          &kp N4        &kp N5        &mt LEFT_SHIFT N6  &kp JP_ASTERISK  &trans                       &kp JP_COLON   &kp JP_AT        &kp JP_LPAREN         &kp JP_RPAREN          &kp PERCENT  &kp JP_YEN
-&kp N0             &kp N1        &kp N2        &kp N3             &kp PERIOD       &kp JP_EQUAL                 &kp JP_QUOTE   &kp HASH         &kp JP_LBRACE         &kp JP_RBRACE          &kp JP_CARET &kp JP_PIPE
-&trans             &trans        &trans        &trans             &trans           &trans                       &kp BACKSPACE  &kp ENTER                                                                  &kp JP_TILDE
+&kp SLASH          &kp N4        &kp N5        &mt LEFT_SHIFT N6  &kp JP_ASTERISK  &trans                       &kp JP_COLON   &kp JP_AT        &kp JP_LPAREN         &kp JP_RPAREN          &kp PERCENT  &kp JP_UNDERSCORE
+&kp N0             &kp N1        &kp N2        &kp N3             &kp PERIOD       &kp JP_EQUAL                 &kp JP_QUOTE   &kp HASH         &kp JP_LBRACE         &kp JP_RBRACE          &kp JP_CARET &kp JP_YEN
+&trans             &trans        &trans        &trans             &trans           &trans                       &kp BACKSPACE  &kp ENTER                                                                  &kp JP_PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
