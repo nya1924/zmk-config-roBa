@@ -89,6 +89,27 @@
 
             label = "MKP_EXIT_AML";
         };
+
+        m: m {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp J &kp G &kp NUMBER_2 &kp N8 &kp NUMBER_1 &kp NUMBER_4 &kp N5 &kp AT_SIGN &kp T &kp E &kp I &kp J &kp I &kp N &kp PERIOD &kp C &kp O &kp PERIOD &kp J &kp P>;
+            label = "M";
+        };
+
+        p: p {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp Y &kp NUMBER_1 &kp N9 &kp NUMBER_2 &kp NUMBER_4 &kp N0 &kp NUMBER_3>;
+            label = "P";
+        };
+
+        i: i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp J &kp G &kp NUMBER_2 &kp N8 &kp NUMBER_1 &kp NUMBER_4 &kp N5>;
+            label = "I";
+        };
     };
 
     behaviors {
@@ -164,7 +185,7 @@
 &kp ESCAPE   &kp F7  &kp F8  &kp F9  &kp F12                                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans       &kp F4  &kp F5  &kp F6  &kp F11  &kp C_MUTE            &bt BT_CLR      &trans        &trans        &trans        &trans        &trans
 &trans       &kp F1  &kp F2  &kp F3  &kp F10  &kp C_PLAY_PAUSE      &bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans
-&kp C_POWER  &trans  &trans  &trans  &trans   &trans                &trans          &trans                                                  &none
+&kp C_POWER  &trans  &trans  &m      &i       &p                    &trans          &trans                                                  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
