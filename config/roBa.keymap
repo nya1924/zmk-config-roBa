@@ -33,11 +33,19 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
-&mt { quick-tap-ms = <0>; };
+&mt {
+    flavor = "balanced";
+    tapping-term-ms = <180>;
+    quick-tap-ms = <180>;
+};
+
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <180>;
+    quick-tap-ms = <180>;
+};
 
 &sl { release-after-ms = <250>; };
-
-&lt { quick-tap-ms = <0>; };
 
 / {
     combos {
