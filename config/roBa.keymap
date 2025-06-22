@@ -210,7 +210,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                             &na                    &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp RC(COLON)  &kp RC(SEMICOLON)      &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp RC(MINUS)  &kp RC(RS(SEMICOLON))  &trans    &mkp MB4  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp RC(MINUS)  &kp RC(JP_COLON)  &trans    &mkp MB4  &mkp MB5  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans         &trans                                               &trans
             >;
 
